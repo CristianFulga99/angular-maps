@@ -1,0 +1,15 @@
+{{title}}
+<!--Centriamo la mappa alle nostre coordinate-->
+<agm-map [latitude]="lat" [longitude]="lng">
+  <!--Mettiamo un marker alle nostre coordinate-->
+  <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="icon">
+  </agm-marker>
+  <agm-marker [latitude]="lat2" [longitude]="lng2" [iconUrl]="icon2">
+  </agm-marker>
+  <agm-marker [latitude]="lat3" [longitude]="lng3" [iconUrl]="icon3">
+  </agm-marker>
+  <agm-polygon [paths]="triangle" [fillColor]="'red'">
+</agm-polygon>
+<agm-polygon [paths]="rectangle" [fillColor]="'blue'">
+</agm-polygon>
+</agm-map>
